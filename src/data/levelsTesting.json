@@ -1,0 +1,242 @@
+[
+  [
+
+    {"id":1, "text":"jabłko", "icon":"🍎", "stat": "vanish", "sound":"jablko.mp3", "lang":"PL" },
+    {"id":1, "text":"an apple", "icon":"🍎", "stat": "vanish", "sound":"apple.mp3", "lang":"EN" },
+    {"id":1, "text":"una manzana", "icon":"🍎", "stat": "vanish", "sound":"manzana.mp3", "lang":"ES"  },
+    {"id":2, "text":"pomarańcze", "icon":"🍊", "stat": "vanish", "sound":"pomarancze.mp3", "lang":"PL"   },
+
+    {"id":2, "text":"an orange", "icon":"🍊", "stat": "vanish", "sound":"orange.mp3", "lang":"EN"   },
+    {"id":2, "text":"una naranja", "icon":"🍊", "stat": "vanish", "sound":"naranjas.mp3", "lang":"ES"  },
+    {"id":3, "text":"cytryna", "icon":"🍋", "stat": "vanish", "sound":"cytryna.mp3", "lang":"PL"   },
+    {"id":3, "text":"a lemon", "icon":"🍋", "stat": "vanish", "sound":"lemon.mp3", "lang":"EN"   },
+
+    {"id":3, "text":"un limón", "icon":"🍋", "stat": "vanish", "sound":"limon.mp3", "lang":"ES"  },
+    {"id":4, "text":"truskawka", "icon":"🍓", "stat": "vanish", "sound":"truskawka.mp3", "lang":"PL"   },
+    {"id":4, "text":"a strawberry", "icon":"🍓", "stat": "vanish", "sound":"strawberry.mp3", "lang":"EN"   },
+    {"id":4, "text":"una fresa", "icon":"🍓", "stat": "vanish", "sound":"fresa.mp3", "lang":"ES"  },
+
+    {"id":5, "text":"winogrona", "icon":"🍇", "stat": "vanish", "sound":"winogrona.mp3", "lang":"PL"   },
+    {"id":5, "text":"a grape", "icon":"🍇", "stat": "vanish", "sound":"grapes.mp3", "lang":"EN"   },
+    {"id":5, "text":"una uva", "icon":"🍇", "stat": "vanish", "sound":"uvas.mp3", "lang":"ES"  },
+    {"id":6, "text":"arbuz", "icon":"🍉", "stat": "vanish", "sound":"arbuz.mp3", "lang":"PL"   },
+
+    {"id":6, "text":"a watermelon", "icon":"🍉", "stat": "vanish", "sound":"watermelon.mp3", "lang":"EN"   },
+    {"id":6, "text":"una sandía", "icon":"🍉", "stat": "vanish", "sound":"sandia.mp3", "lang":"ES"  },
+    {"id":7, "text":"gruszka", "icon":"🍐", "stat": "vanish", "sound":"gruszka.mp3", "lang":"PL"   },
+    {"id":7, "text":"a pear", "icon":"🍐", "stat": "vanish", "sound":"pear.mp3", "lang":"EN"   },
+
+    {"id":7, "text":"una pera", "icon":"🍐", "stat": "vanish", "sound":"pera.mp3", "lang":"ES"  },
+    {"id":8, "text":"wiśnia", "icon":"🍒", "stat": "", "sound":"wisnia.mp3", "lang":"PL"   },
+    {"id":8, "text":"a cherry", "icon":"🍒", "stat": "", "sound":"cherry.mp3", "lang":"EN"   },
+    {"id":8, "text":"una cereza", "icon":"🍒", "stat": "", "sound":"cereza.mp3", "lang":"ES"  }
+
+  ],
+
+  [
+
+        {"id":1, "text":"marchewka", "icon":"🥕", "stat": "vanish" },
+        {"id":1, "text":"a carrot", "icon":"🥕", "stat": "vanish" },
+        {"id":1, "text":"una zanahoria", "icon":"🥕", "stat": "vanish" },
+        {"id":2, "text":"ziemniak", "icon":"🥔", "stat": "vanish" },
+
+        {"id":2, "text":"a potato", "icon":"🥔", "stat": "vanish" },
+        {"id":2, "text":"una patata", "icon":"🥔", "stat": "vanish" },
+        {"id":3, "text":"cebula", "icon":"🧅", "stat": "vanish" },
+        {"id":3, "text":"an onion", "icon":"🧅", "stat": "vanish" },
+
+        {"id":3, "text":"una cebolla", "icon":"🧅", "stat": "vanish" },
+        {"id":4, "text":"ogórek", "icon":"🥒", "stat": "vanish" },
+        {"id":4, "text":"a cucumber", "icon":"🥒", "stat": "vanish" },
+        {"id":4, "text":"un pepino", "icon":"🥒", "stat": "vanish" },
+
+        {"id":5, "text":"czosnek", "icon":"🧄", "stat": "vanish" },
+        {"id":5, "text":"a garlic", "icon":"🧄", "stat": "vanish" },
+        {"id":5, "text":"un ajo", "icon":"🧄", "stat": "vanish" },
+        {"id":6, "text":"brokuł", "icon":"🥦", "stat": "vanish" },
+
+        {"id":6, "text":"a broccoli", "icon":"🥦", "stat": "vanish" },
+        {"id":6, "text":"un brócoli", "icon":"🥦", "stat": "vanish" },
+        {"id":7, "text":"pomidor", "icon":"🍅", "stat": "vanish" },
+        {"id":7, "text":"a tomato", "icon":"🍅", "stat": "vanish" },
+
+        {"id":7, "text":"un tomate", "icon":"🍅", "stat": "vanish" },
+        {"id":8, "text":"kukurydza", "icon":"🌽", "stat": "" },
+        {"id":8, "text":"a corn", "icon":"🌽", "stat": "" },
+        {"id":8, "text":"un maíz", "icon":"🌽", "stat": "" }
+
+  ],
+
+  [
+
+          {"id":1, "text":"biec", "icon":"🏃‍♂️", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"to run", "icon":"🏃‍♂️", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"para correr", "icon":"🏃‍♂️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"pływać", "icon":"🏊‍♂️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":2, "text":"to swim", "icon":"🏊‍♂️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"nadar", "icon":"🏊‍♂️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"modlić się", "icon":"🙏", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"to pray", "icon":"🙏", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":3, "text":"orar", "icon":"🙏", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"budować", "icon":"🛠️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"to build", "icon":"🛠️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"para construir", "icon":"🛠️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":5, "text":"sprzątać", "icon":"🧹", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"to clean", "icon":"🧹", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"para limpiar", "icon":"🧹", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"pisać", "icon":"✍️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":6, "text":"to write", "icon":"✍️", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"escribir", "icon":"✍️", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"chodzić", "icon":"🚶‍♀️", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"to walk", "icon":"🚶‍♀️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":7, "text":"caminar", "icon":"🚶‍♀️", "stat": "vanish", "sound":".mp3"  },
+          {"id":8, "text":"jeździć na nartach", "icon":"🎿", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"to ski", "icon":"🎿", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"esquiar", "icon":"🎿", "stat": "", "sound":".mp3"  }
+
+  ],
+
+  [
+
+          {"id":1, "text":"krzesło", "icon":"🪑", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"a chair", "icon":"🪑", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"una silla", "icon":"🪑", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"sztućce", "icon":"🍽️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":2, "text":"a cutlery", "icon":"🍽️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"un cubierto", "icon":"🍽️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"łóżko", "icon":"🛏️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"a bed", "icon":"🛏️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":3, "text":"una cama", "icon":"🛏️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"drzwi", "icon":"🚪", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"a door", "icon":"🚪", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"una puerta", "icon":"🚪", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":5, "text":"toaleta", "icon":"🚽", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"a toilet", "icon":"🚽", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"un inodoro", "icon":"🚽", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"prysznic", "icon":"🚿", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":6, "text":"a shower", "icon":"🚿", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"una ducha", "icon":"🚿", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"dom", "icon":"🏠", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"a house", "icon":"🏠", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":7, "text":"una casa", "icon":"🏠", "stat": "vanish", "sound":".mp3"  },
+          {"id":8, "text":"obraz", "icon":"🖼️", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"a painting", "icon":"🖼️", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"una pintura", "icon":"🖼️", "stat": "", "sound":".mp3"  }
+
+  ],
+
+  [
+
+        {"id":1, "text":"smutny", "icon":"😢", "stat": "vanish" },
+        {"id":1, "text":"sad", "icon":"😢", "stat": "vanish" },
+        {"id":1, "text":"triste", "icon":"😢", "stat": "vanish" },
+        {"id":2, "text":"szczęśliwy", "icon":"😄", "stat": "vanish" },
+
+        {"id":2, "text":"happy", "icon":"😄", "stat": "vanish" },
+        {"id":2, "text":"feliz", "icon":"😄", "stat": "vanish" },
+        {"id":3, "text":"znudzony", "icon":"😐", "stat": "vanish" },
+        {"id":3, "text":"bored", "icon":"😐", "stat": "vanish" },
+
+        {"id":3, "text":"aburrido", "icon":"😐", "stat": "vanish" },
+        {"id":4, "text":"zły", "icon":"😠", "stat": "vanish" },
+        {"id":4, "text":"angry", "icon":"😠", "stat": "vanish" },
+        {"id":4, "text":"enojado", "icon":"😠", "stat": "vanish" },
+
+        {"id":5, "text":"przestraszony", "icon":"😱", "stat": "vanish" },
+        {"id":5, "text":"scared", "icon":"😱", "stat": "vanish" },
+        {"id":5, "text":"asustado", "icon":"😱", "stat": "vanish" },
+        {"id":6, "text":"senny", "icon":"😴", "stat": "vanish" },
+
+        {"id":6, "text":"sleepy", "icon":"😴", "stat": "vanish" },
+        {"id":6, "text":"somnoliento", "icon":"😴", "stat": "vanish" },
+        {"id":7, "text":"zadowolony", "icon":"😌", "stat": "vanish" },
+        {"id":7, "text":"satisfied", "icon":"😌", "stat": "vanish" },
+
+        {"id":7, "text":"satisfecho", "icon":"😌", "stat": "vanish" },
+        {"id":8, "text":"szalony", "icon":"🤪", "stat": "" },
+        {"id":8, "text":"crazy", "icon":"🤪", "stat": "" },
+        {"id":8, "text":"loco", "icon":"🤪", "stat": "" }
+
+  ],
+
+  [
+
+          {"id":1, "text":"jeden", "icon":"1️", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"one", "icon":"1️", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"uno", "icon":"1️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"dwa", "icon":"2️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":2, "text":"two", "icon":"2️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"dos", "icon":"2️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"trzy", "icon":"3️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"three", "icon":"3️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":3, "text":"tres", "icon":"3️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"cztery", "icon":"4️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"four", "icon":"4️", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"cuatro", "icon":"4️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":5, "text":"pięć", "icon":"5️", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"five", "icon":"5️", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"cinco", "icon":"5️", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"sześć", "icon":"6️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":6, "text":"six", "icon":"6️", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"seis", "icon":"6️", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"siedem", "icon":"7️", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"seven", "icon":"7️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":7, "text":"siete", "icon":"7️", "stat": "vanish", "sound":".mp3"  },
+          {"id":8, "text":"osiem", "icon":"8️", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"eight", "icon":"8️", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"ocho", "icon":"8️", "stat": "", "sound":".mp3"  }
+
+  ],
+
+  [
+
+          {"id":1, "text":"samochód", "icon":"🚗", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"a car", "icon":"🚗", "stat": "vanish", "sound":".mp3" },
+          {"id":1, "text":"un coche", "icon":"🚗", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"samolot", "icon":"✈️", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":2, "text":"a plane", "icon":"✈️", "stat": "vanish", "sound":".mp3"  },
+          {"id":2, "text":"un avión", "icon":"✈️", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"statek", "icon":"🚢", "stat": "vanish", "sound":".mp3"  },
+          {"id":3, "text":"a ship", "icon":"🚢", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":3, "text":"un barco", "icon":"🚢", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"pociąg", "icon":"🚆", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"a train", "icon":"🚆", "stat": "vanish", "sound":".mp3"  },
+          {"id":4, "text":"un tren", "icon":"🚆", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":5, "text":"rower", "icon":"🚲", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"a bicycle", "icon":"🚲", "stat": "vanish", "sound":".mp3"  },
+          {"id":5, "text":"una bicicleta", "icon":"🚲", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"śmigłowiec", "icon":"🚁", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":6, "text":"a helicopter", "icon":"🚁", "stat": "vanish", "sound":".mp3"  },
+          {"id":6, "text":"un helicóptero", "icon":"🚁", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"autobus", "icon":"🚍", "stat": "vanish", "sound":".mp3"  },
+          {"id":7, "text":"a bus", "icon":"🚍", "stat": "vanish", "sound":".mp3"  },
+
+          {"id":7, "text":"un autobús", "icon":"🚍", "stat": "vanish", "sound":".mp3"  },
+          {"id":8, "text":"motor", "icon":"🛵", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"a motorbike", "icon":"🛵", "stat": "", "sound":".mp3"  },
+          {"id":8, "text":"una motocicleta", "icon":"🛵", "stat": "", "sound":".mp3"  }
+
+  ]
+
+]
+
+      

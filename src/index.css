@@ -1,0 +1,461 @@
+
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family: Cambria, Georgia, serif;
+}
+
+html, body{
+  height:100%;
+}
+
+
+body{
+
+  animation: bgGradAnim 60s linear infinite;
+    
+}
+
+@keyframes bgGradAnim{
+  
+  0%{background-color: purple;}
+
+  15%{background-color:blue;}
+
+	20%{background-color:lightblue;}
+
+	30%{background-color:green;}
+
+	40%{background-color:lightgreen;}
+
+	50%{background-color:yellow;} /*<-- give opacity*/
+  
+	70%{background-color:orange;}
+
+  80%{background-color:orangered;}
+
+  90%{background-color:#ff4a4a;}
+
+  100%{background-color: purple;}
+}
+
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left:-50px;
+
+}
+
+.navbar ul{
+  margin-top:14%;
+  margin-left:30%;
+  display:flex;
+  
+}
+
+.navbar ul li:hover{
+  opacity:0.7;
+  cursor:pointer;
+}
+
+.navbar ul li{
+  /* display: inline-block; */
+  color: #000; 
+  /* box-shadow: 0 0 30px 0 rgba(0,0,0,0.0); */
+  border-radius: 10px;
+  border: solid white;
+  min-height:40px;
+  min-width:100px;
+  max-width:200px;
+  text-align: center;
+  /* float:left; */
+  list-style:none;
+  margin-left:10px;
+  margin-top:10px;
+  padding-top:5px;
+}
+
+.navbar img{
+  width: 200px;
+  margin-left:20%;
+  margin-top:2%;
+}
+
+
+.liHome{
+  background-image: linear-gradient(to bottom, yellow, orange);
+}
+.liGame{
+  background-image: linear-gradient(to bottom, yellow, orange);
+}
+.liSettings{
+  background-image: linear-gradient(to bottom, yellow, orange);
+}
+.liAbout{
+  background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+.landingHeader{
+  margin-top:50px;
+  color:white;
+  font-size:48px;
+  text-shadow:2px 2px black;
+}
+
+.startBtn{
+  background-image: linear-gradient(to bottom, green, lightgreen);
+  color:white;
+  font-size:24px;
+  width:160px;
+  height:60px;
+  margin:20px;
+  /* does not work: */
+  font-weight:900;
+  /* does not work */
+  outline:0;
+  border-radius: 10px;
+}
+
+.startBtn2{
+  background-image: linear-gradient(to bottom, green, lightgreen);
+  color:white;
+  font-size:24px;
+  width:160px;
+  height:60px;
+  margin:60px;
+  margin-top:100px;
+  /* does not work: */
+  font-weight:900;
+  /* does not work */
+  outline:0;
+  border-radius: 10px;
+}
+
+
+.backToStartBtn{
+  background-image: linear-gradient(to bottom, yellow, orange);
+  color:white;
+  font-size:24px;
+  width:160px;
+  height:60px;
+  margin:60px;
+  margin-top:100px;
+  /* does not work: */
+  font-weight:900;
+  /* does not work */
+  outline:0;
+  border-radius: 10px;
+}
+
+.startBtn:hover{
+  opacity:0.7;
+  cursor:pointer;
+}
+
+.MJEdescription{
+  color:black;
+  margin-top:30px;
+  margin-bottom:30px;
+  max-width:70%;
+  /* text-align: center;
+  justify-content: center;
+  align-items:center ; */
+  font-family: Calibri, sans-serif;
+  
+}
+
+.stylePara{
+  margin-right:auto;
+  margin-left:auto;
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+
+}
+
+
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; <=this messes up the margins*/
+  flex-wrap: wrap;
+
+}
+
+.settingsHeading{
+  margin-top:5%;
+  margin-bottom: 50px;
+  color:white;
+  font-size:48px;
+  text-shadow:2px 2px black;
+
+}
+
+.formsSideBySide{
+  display:inline-block;
+  margin:40px;
+}
+
+
+/* syling SETTINGS forms:  */
+.stylingForm1{
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+/* --------------------------------------------------------------
+BELOW - styling game area - copied from separte project - LDG - 20251013
+-------------------------------------------------------------- */
+
+.gameContainer{
+  margin-top:100px;
+  margin-bottom:100px;
+  height:400px;
+  width:700px;
+  /* background-color:red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  animation: slowFocus 5s linear;
+}
+
+.settingsContainer{
+  animation: slowFocus 1s linear;
+}
+
+@keyframes slowFocus{
+  
+  0%{opacity: 0;}
+
+  50%{opacity:0.5;}
+
+  100%{opacity:1;}
+}
+
+.card{
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height:40px;
+  /* transform: rotateY(180deg);
+  animation: 2s hideCard linear; */
+}
+
+.card span{
+  opacity:0;
+}
+
+.card.active>span{
+  opacity:100;
+}
+.card.active{
+  background-color: orange;
+}
+
+.card.wrong{
+  background-color: red;
+}
+
+.card.correct{
+  background-color: greenyellow;
+}
+
+.card.vanish{
+  opacity:0;
+}
+
+
+/* --------------------------------------------------------------
+ABOVE - styling game area - copied from separte project - LDG - 20251013
+-------------------------------------------------------------- */
+
+
+.stylingAbout{
+  /* background-color: #000; */
+  display:inline-block;
+  max-width:400px;
+  float:left;  
+}
+.landingHeader2{
+  margin-top:50px;
+  color:white;
+  font-size:48px;
+  text-shadow:2px 2px black;
+  padding-right:140px;
+  margin-bottom:50px;
+}
+/* .headingAbout{
+  text-align: center;} */
+.stylingQuickAccess{
+  /* background-color: #000; */
+  display:inline-block;
+  max-width:300px;
+  clear:both;
+}
+.quickBtn{
+  margin-top:50px;}
+.MJEdescription2{
+  color:black;
+  margin-top:30px;
+  margin-bottom:30px;
+  /* max-width:120%; */
+  padding:10%;
+  margin-right:100px;
+  text-align: center;
+  justify-content: center;
+  align-items:center ;
+  font-family: Calibri, sans-serif;
+
+
+    border: solid black 2px;
+  background-color: white;
+
+}
+
+
+/* styling funfacts section */
+.funContainer{
+
+  border: solid black 2px;
+  background-color: white;
+  max-width:800px;
+  margin-top:50px;
+  margin-left:50px;
+  padding:5%;
+
+}
+
+
+/* here I add a responsive navbar for small screens (flex->to->block) */
+@media (max-width: 768px) {
+
+      .navbar{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        /* padding: 15px, 8%;
+        background-color: white; */
+        margin-left:-50px;
+      }
+
+      .navbar ul{
+        margin-top:14%;
+        margin-left:30%;
+        display:block;
+      }
+
+      .gameContainer{
+        margin-top:100px;
+        margin-bottom:100px;
+        height:400px;
+        width:100vw;
+        /* background-color:red; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0.5em;
+        animation: slowFocus 5s linear;
+      }
+
+      /* how to give a padding on left and right? */
+
+      .card{
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height:40px;
+
+        
+        /* this 29vw worked when there was no fontsize set - it gave nice margin on mobile*/
+        max-width:27vw;
+        /* this sets the fontsize hardcoded not responsive */
+        font-size:12px;
+        min-width:27vw;
+      }
+
+      .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:200px;
+        max-width:100%;
+        /* margin-left:10px; */
+
+      }
+
+      /* styling about section on small devices */
+      .stylingAbout{
+        display:block;
+      }
+      .stylingQuickAccess{
+        display:block;
+      }
+
+
+  }
+
+
+/* .styleTimer{
+
+  text-align:center;
+  display:block;
+  margin-top:40px;
+  font-size:28px;
+
+} */
+
+.styleMoves{
+
+  text-align:center;
+  display:block;
+  font-size:28px;
+  margin-top:40px;
+  /* this width makes div with score and timer fold below the gameboard
+  see the .container with: flex-wrap: wrap; */
+  width:100%;
+
+}
+
+.styleResult{
+
+  text-align:center;
+  display:block;
+  margin-top:20px;
+  font-size:28px;
+
+}
+
+.styleResult2{
+
+  text-align:center;
+  display:block;
+  margin-top:20px;
+  font-size:28px;
+
+}
+
+
+.redFont{
+  color:red;
+  font-weight: 900;
+  font-size: 28px;
+}
