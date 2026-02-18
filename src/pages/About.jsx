@@ -35,31 +35,31 @@ const About = ({ levelcounter3, setLevelcounter3 }) => {
           <h1 className="landingHeader">Quick Access</h1>
           <div className="quickBtn">
             
-                <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard');}}>
+                <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard_x4');}}>
                     The Fruits
                 </button>
            
-                <button className="startBtn"  onClick={() => {setLevelcounter3(1); navigate('/gameboard');}}>
+                <button className="startBtn"  onClick={() => {setLevelcounter3(1); navigate('/gameboard_x4');}}>
                     The Vegetables
                 </button>
             
-                <button className="startBtn"  onClick={() => {setLevelcounter3(2); navigate('/gameboard');}}>
+                <button className="startBtn"  onClick={() => {setLevelcounter3(2); navigate('/gameboard_x4');}}>
                     The Actions
                 </button>
             
-                <button className="startBtn"   onClick={() => {setLevelcounter3(3); navigate('/gameboard');}}>
+                <button className="startBtn"   onClick={() => {setLevelcounter3(3); navigate('/gameboard_x4');}}>
                     The Homeware
                 </button>
             
-                <button className="startBtn"  onClick={() => {setLevelcounter3(4); navigate('/gameboard');}}>
+                <button className="startBtn"  onClick={() => {setLevelcounter3(4); navigate('/gameboard_x4');}}>
                     The Moods
                 </button>
             
-                <button className="startBtn"  onClick={() => {setLevelcounter3(5); navigate('/gameboard');}}>
+                <button className="startBtn"  onClick={() => {setLevelcounter3(5); navigate('/gameboard_x4');}}>
                     The Numbers
                 </button>
             
-                <button className="startBtn"  onClick={() => {setLevelcounter3(6); navigate('/gameboard');}}>
+                <button className="startBtn"  onClick={() => {setLevelcounter3(6); navigate('/gameboard_x4');}}>
                     The Transport
                 </button>
             

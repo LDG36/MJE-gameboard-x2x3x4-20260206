@@ -1,0 +1,231 @@
+{
+  "english": {
+    "0": [
+        {"id":1, "text":"an apple", "icon":"🍎", "stat": "" },
+        {"id":2, "text":"an orange", "icon":"🍊", "stat": ""},
+        {"id":3, "text":"a lemon", "icon":"🍋", "stat": ""},
+        {"id":4, "text":"a strawberry", "icon":"🍓", "stat": ""},
+        {"id":5, "text":"a grape", "icon":"🍇", "stat": ""},
+        {"id":6, "text":"a watermelon", "icon":"🍉", "stat": ""},
+        {"id":7, "text":"a pear", "icon":"🍐", "stat": ""},
+        {"id":8, "text":"a cherry", "icon":"🍒", "stat": ""},
+        {"id":9, "text":"a pineapple", "icon":"🍍", "stat":""},
+        {"id":10, "text":"a mango", "icon":"🥭", "stat":""},
+        {"id":11, "text":"a kiwi", "icon":"🥝", "stat":""},
+        {"id":12, "text":"a peach", "icon":"🍑", "stat":""},
+        {"id":13, "text":"a fig", "icon":"🍈", "stat":""},
+        {"id":14, "text":"a coconut", "icon":"🥥", "stat":""},
+        {"id":15, "text":"a banana", "icon":"🍌", "stat":""},
+        {"id":16, "text":"a broccoli", "icon":"🥦", "stat":""},
+        {"id":17, "text":"a cucumber", "icon":"🥒", "stat":""},
+        {"id":18, "text":"a corn", "icon":"🌽", "stat":""}
+    ],
+    "1": [
+        {"id":1, "text":"a carrot", "icon":"🥕", "stat": "" },
+        {"id":2, "text":"an onion", "icon":"🧅", "stat": ""},
+        {"id":3, "text":"a potato", "icon":"🥔", "stat": ""},
+        {"id":4, "text":"a garlic", "icon":"🧄", "stat": ""},
+        {"id":5, "text":"a corn", "icon":"🌽", "stat": ""},
+        {"id":6, "text":"a pepper", "icon":"🌶️", "stat": ""},
+        {"id":7, "text":"a rice", "icon":"🍚", "stat": ""},
+        {"id":8, "text":"a cucumber", "icon":"🥒", "stat": ""},
+        {"id":9, "text":"a leek", "icon":"🥬", "stat":""},
+        {"id":10, "text":"a broccoli", "icon":"🥦", "stat":""},
+        {"id":11, "text":"a chestnut", "icon":"🌰", "stat":""},
+        {"id":12, "text":"a peanut", "icon":"🥜", "stat":""},
+        {"id":13, "text":"an herb", "icon":"🌿", "stat":""},
+        {"id":14, "text":"a mushroom", "icon":"🍄", "stat":""},
+        {"id":15, "text":"a courgette", "icon":"🍆", "stat":""},
+        {"id":16, "text":"a cress", "icon":"🌱", "stat":""},
+        {"id":17, "text":"a coconut", "icon":"🥥", "stat":""},
+        {"id":18, "text":"a salad", "icon":"🥗", "stat":""}
+    ]
+  },
+
+  "spanish": {
+    "0": [
+        {"id":1, "text":"una manzana", "icon":"🍎", "stat":""},
+        {"id":2, "text":"una naranja", "icon":"🍊", "stat":""},
+        {"id":3, "text":"un limón", "icon":"🍋", "stat":""},
+        {"id":4, "text":"una fresa", "icon":"🍓", "stat":""},
+        {"id":5, "text":"una uva", "icon":"🍇", "stat":""},
+        {"id":6, "text":"una sandía", "icon":"🍉", "stat":""},
+        {"id":7, "text":"una pera", "icon":"🍐", "stat":""},
+        {"id":8, "text":"una cereza", "icon":"🍒", "stat":""},
+        {"id":9, "text":"una piña", "icon":"🍍", "stat":""},
+        {"id":10, "text":"un mango", "icon":"🥭", "stat":""},
+        {"id":11, "text":"un kiwi", "icon":"🥝", "stat":""},
+        {"id":12, "text":"un melocotón", "icon":"🍑", "stat":""},
+        {"id":13, "text":"un higo", "icon":"🍈", "stat":""},
+        {"id":14, "text":"un coco", "icon":"🥥", "stat":""},
+        {"id":15, "text":"un plátano", "icon":"🍌", "stat":""},
+        {"id":16, "text":"un brócoli", "icon":"🥦", "stat":""},
+        {"id":17, "text":"un pepino", "icon":"🥒", "stat":""},
+        {"id":18, "text":"un maíz", "icon":"🌽", "stat":""}
+
+    ],
+    "1": [
+        {"id":1, "text":"una zanahoria", "icon":"🥕", "stat":""},
+        {"id":2, "text":"una cebolla", "icon":"🧅", "stat":""},
+        {"id":3, "text":"una patata", "icon":"🥔", "stat":""},
+        {"id":4, "text":"un ajo", "icon":"🧄", "stat":""},
+        {"id":5, "text":"un maíz", "icon":"🌽", "stat":""},
+        {"id":6, "text":"un chile", "icon":"🌶️", "stat":""},
+        {"id":7, "text":"un arroz", "icon":"🍚", "stat":""},
+        {"id":8, "text":"un pepino", "icon":"🥒", "stat":""},
+        {"id":9, "text":"un puerro", "icon":"🥬", "stat":""},
+        {"id":10, "text":"un brócoli", "icon":"🥦", "stat":""},
+        {"id":11, "text":"una castaña", "icon":"🌰", "stat":""},
+        {"id":12, "text":"un cacahuete", "icon":"🥜", "stat":""},
+        {"id":13, "text":"una hierba", "icon":"🌿", "stat":""},
+        {"id":14, "text":"un champiñón", "icon":"🍄", "stat":""},
+        {"id":15, "text":"un calabacín", "icon":"🍆", "stat":""},
+        {"id":16, "text":"un berro", "icon":"🌱", "stat":""},
+        {"id":17, "text":"un coco", "icon":"🥥", "stat":""},
+        {"id":18, "text":"una ensalada", "icon":"🥗", "stat":""}
+        ]
+
+  },
+
+  "polish": {
+    "0": [
+        {"id":1, "text":"jabłko", "icon":"🍎", "stat":""},
+        {"id":2, "text":"pomarańcza", "icon":"🍊", "stat":""},
+        {"id":3, "text":"cytryna", "icon":"🍋", "stat":""},
+        {"id":4, "text":"truskawka", "icon":"🍓", "stat":""},
+        {"id":5, "text":"winogrono", "icon":"🍇", "stat":""},
+        {"id":6, "text":"arbuz", "icon":"🍉", "stat":""},
+        {"id":7, "text":"gruszka", "icon":"🍐", "stat":""},
+        {"id":8, "text":"wiśnia", "icon":"🍒", "stat":""},
+        {"id":9, "text":"ananas", "icon":"🍍", "stat":""},
+        {"id":10, "text":"mango", "icon":"🥭", "stat":""},
+        {"id":11, "text":"kiwi", "icon":"🥝", "stat":""},
+        {"id":12, "text":"brzoskwinia", "icon":"🍑", "stat":""},
+        {"id":13, "text":"figa", "icon":"🍈", "stat":""},
+        {"id":14, "text":"kokos", "icon":"🥥", "stat":""},
+        {"id":15, "text":"banan", "icon":"🍌", "stat":""},
+        {"id":16, "text":"brokuł", "icon":"🥦", "stat":""},
+        {"id":17, "text":"ogórek", "icon":"🥒", "stat":""},
+        {"id":18, "text":"kukurydza", "icon":"🌽", "stat":""}
+
+    ],
+    "1": [
+        {"id":1, "text":"marchewka", "icon":"🥕", "stat":""},
+        {"id":2, "text":"cebula", "icon":"🧅", "stat":""},
+        {"id":3, "text":"ziemniak", "icon":"🥔", "stat":""},
+        {"id":4, "text":"czosnek", "icon":"🧄", "stat":""},
+        {"id":5, "text":"kukurydza", "icon":"🌽", "stat":""},
+        {"id":6, "text":"ostra papryka", "icon":"🌶️", "stat":""},
+        {"id":7, "text":"ryż", "icon":"🍚", "stat":""},
+        {"id":8, "text":"ogórek", "icon":"🥒", "stat":""},
+        {"id":9, "text":"por", "icon":"🥬", "stat":""},
+        {"id":10, "text":"brokuł", "icon":"🥦", "stat":""},
+        {"id":11, "text":"kasztan", "icon":"🌰", "stat":""},
+        {"id":12, "text":"orzeszek ziemny", "icon":"🥜", "stat":""},
+        {"id":13, "text":"zioło", "icon":"🌿", "stat":""},
+        {"id":14, "text":"pieczarka", "icon":"🍄", "stat":""},
+        {"id":15, "text":"cukinia", "icon":"🍆", "stat":""},
+        {"id":16, "text":"rzeżucha", "icon":"🌱", "stat":""},
+        {"id":17, "text":"kokos", "icon":"🥥", "stat":""},
+        {"id":18, "text":"sałatka", "icon":"🥗", "stat":""}
+        ]
+
+  },
+
+ "german": {
+    "0": [
+        {"id":1, "text":"der Apfel", "icon":"🍎", "stat":""},
+        {"id":2, "text":"die Orange", "icon":"🍊", "stat":""},
+        {"id":3, "text":"die Zitrone", "icon":"🍋", "stat":""},
+        {"id":4, "text":"die Erdbeere", "icon":"🍓", "stat":""},
+        {"id":5, "text":"die Weintraube", "icon":"🍇", "stat":""},
+        {"id":6, "text":"die Wassermelone", "icon":"🍉", "stat":""},
+        {"id":7, "text":"die Birne", "icon":"🍐", "stat":""},
+        {"id":8, "text":"die Kirsche", "icon":"🍒", "stat":""},
+        {"id":9, "text":"die Ananas", "icon":"🍍", "stat":""},
+        {"id":10, "text":"die Mango", "icon":"🥭", "stat":""},
+        {"id":11, "text":"die Kiwi", "icon":"🥝", "stat":""},
+        {"id":12, "text":"der Pfirsich", "icon":"🍑", "stat":""},
+        {"id":13, "text":"die Feige", "icon":"🍈", "stat":""},
+        {"id":14, "text":"die Kokosnuss", "icon":"🥥", "stat":""},
+        {"id":15, "text":"die Banane", "icon":"🍌", "stat":""},
+        {"id":16, "text":"der Brokkoli", "icon":"🥦", "stat":""},
+        {"id":17, "text":"die Gurke", "icon":"🥒", "stat":""},
+        {"id":18, "text":"der Mais", "icon":"🌽", "stat":""}
+
+
+    ],
+    "1": [
+        {"id":1, "text":"die Karotte", "icon":"🥕", "stat":""},
+        {"id":2, "text":"die Zwiebel", "icon":"🧅", "stat":""},
+        {"id":3, "text":"die Kartoffel", "icon":"🥔", "stat":""},
+        {"id":4, "text":"der Knoblauch", "icon":"🧄", "stat":""},
+        {"id":5, "text":"der Mais", "icon":"🌽", "stat":""},
+        {"id":6, "text":"die Chilischote", "icon":"🌶️", "stat":""},
+        {"id":7, "text":"der Reis", "icon":"🍚", "stat":""},
+        {"id":8, "text":"die Gurke", "icon":"🥒", "stat":""},
+        {"id":9, "text":"der Lauch", "icon":"🥬", "stat":""},
+        {"id":10, "text":"der Brokkoli", "icon":"🥦", "stat":""},
+        {"id":11, "text":"die Kastanie", "icon":"🌰", "stat":""},
+        {"id":12, "text":"die Erdnuss", "icon":"🥜", "stat":""},
+        {"id":13, "text":"das Kraut", "icon":"🌿", "stat":""},
+        {"id":14, "text":"der Champignon", "icon":"🍄", "stat":""},
+        {"id":15, "text":"die Zucchini", "icon":"🍆", "stat":""},
+        {"id":16, "text":"die Kresse", "icon":"🌱", "stat":""},
+        {"id":17, "text":"die Kokosnuss", "icon":"🥥", "stat":""},
+        {"id":18, "text":"der Salat", "icon":"🥗", "stat":""}
+
+        ]
+
+  },
+
+   "french": {
+    "0": [
+
+        {"id":1, "text":"une pomme", "icon":"🍎", "stat": "" },
+        {"id":2, "text":"une orange", "icon":"🍊", "stat": "" },
+        {"id":3, "text":"un citron", "icon":"🍋", "stat": "" },
+        {"id":4, "text":"une fraise", "icon":"🍓", "stat": "" },
+        {"id":5, "text":"un raisin", "icon":"🍇", "stat": "" },
+        {"id":6, "text":"une pastèque", "icon":"🍉", "stat": "" },
+        {"id":7, "text":"une poire", "icon":"🍐", "stat": "" },
+        {"id":8, "text":"une cerise", "icon":"🍒", "stat": "" },
+        {"id":9, "text":"un ananas", "icon":"🍍", "stat": "" },
+        {"id":10, "text":"une mangue", "icon":"🥭", "stat": "" },
+        {"id":11, "text":"un kiwi", "icon":"🥝", "stat": "" },
+        {"id":12, "text":"une pêche", "icon":"🍑", "stat": "" },
+        {"id":13, "text":"une figue", "icon":"🍈", "stat": "" },
+        {"id":14, "text":"une noix de coco", "icon":"🥥", "stat": "" },
+        {"id":15, "text":"une banane", "icon":"🍌", "stat": "" },
+        {"id":16, "text":"un brocoli", "icon":"🥦", "stat": "" },
+        {"id":17, "text":"un concombre", "icon":"🥒", "stat": "" },
+        {"id":18, "text":"un maïs", "icon":"🌽", "stat": "" }
+
+            ],
+    "1": [
+          
+        {"id":1, "text":"une carotte", "icon":"🥕", "stat": "" },
+        {"id":2, "text":"un oignon", "icon":"🧅", "stat": "" },
+        {"id":3, "text":"une pomme de terre", "icon":"🥔", "stat": "" },
+        {"id":4, "text":"une gousse d'ail", "icon":"🧄", "stat": "" },
+        {"id":5, "text":"un maïs", "icon":"🌽", "stat": "" },
+        {"id":6, "text":"un piment", "icon":"🌶️", "stat": "" },
+        {"id":7, "text":"du riz", "icon":"🍚", "stat": "" },
+        {"id":8, "text":"un concombre", "icon":"🥒", "stat": "" },
+        {"id":9, "text":"un poireau", "icon":"🥬", "stat": "" },
+        {"id":10, "text":"un brocoli", "icon":"🥦", "stat": "" },
+        {"id":11, "text":"une châtaigne", "icon":"🌰", "stat": "" },
+        {"id":12, "text":"une cacahuète", "icon":"🥜", "stat": "" },
+        {"id":13, "text":"une herbe", "icon":"🌿", "stat": "" },
+        {"id":14, "text":"un champignon", "icon":"🍄", "stat": "" },
+        {"id":15, "text":"une courgette", "icon":"🍆", "stat": "" },
+        {"id":16, "text":"du cresson", "icon":"🌱", "stat": "" },
+        {"id":17, "text":"une noix de coco", "icon":"🥥", "stat": "" },
+        {"id":18, "text":"une salade", "icon":"🥗", "stat": "" }
+
+    
+    ]
+
+  }
+
+}

@@ -40,7 +40,8 @@ const Home = ({ levelcounter3, setLevelcounter3 }) => {
             </p> */}
         </div>
         {/* <Link to='/gameboard'> */}
-            <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard') }}>
+            {/* <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard') }}> */}
+            <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard_x4') }}>
                 Start
             </button>
         {/* </Link> */}

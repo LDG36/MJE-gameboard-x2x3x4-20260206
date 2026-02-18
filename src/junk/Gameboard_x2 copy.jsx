@@ -3,12 +3,11 @@ import { useState } from 'react'
 import Card from '../components/Card'
 import { useRef, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import levelsData from "../data/levelsTesting.json";
+import levelsData from "../data/levelsTesting_x2.json";
 
-//at the moment the same as Gameboard_x2(no x2 changes yet) and same as Gameboard (without comments) 20260212
 
 //need to send props from App.jsx
-const Gameboard_x3 = (props) => {
+const Gameboard_x2 = (props) => {
 
     const navigate = useNavigate();
     const {state} = useLocation();
@@ -43,7 +42,7 @@ const Gameboard_x3 = (props) => {
               return statExist;
           }
         
-          const [prevprev, setPrevprev] = useState(-1);
+        //   const [prevprev, setPrevprev] = useState(-1);
           const [prev, setPrev] = useState(-2);
           const [disabled, setDisabled] = useState(false);
           const [moves, setMoves] = useState(0);
@@ -91,29 +90,30 @@ const Gameboard_x3 = (props) => {
           //Time related--------------------------------------------------------------
 
     
-          function checkThree(current)
+          function checkTwo(current)
           {
               setDisabled(true);  
     
-              if(items[current].id == items[prev].id && items[current].id == items[prevprev].id )
+            //   if(items[current].id == items[prev].id && items[current].id == items[prevprev].id )
+              if(items[current].id == items[prev].id )
               {
                 
                 items[current].stat = "correct";
-                items[prevprev].stat = "correct";
+                // items[prevprev].stat = "correct";
                 items[prev].stat = "correct";
                 setItems([...items])            
     
                 setTimeout(()=>{
-                  items[current].stat = "vanish"
-                  items[prevprev].stat = "vanish"
-                  items[prev].stat = "vanish"
-                  setPrev(-2),
-                  setPrevprev(-1)
+                  items[current].stat = "vanish";
+                //   items[prevprev].stat = "vanish"
+                  items[prev].stat = "vanish";
+                  setPrev(-2);
+                //   setPrevprev(-1)
     
                   //important code - level finish
                   if (items.every(item => item.stat.includes("vanish"))) {
                   //navigate('/nextboard', {state: {moves, time, levelcounter} });
-                  navigate('/nextboard', {state: {moves, time} });
+                  navigate('/nextboard_x2', {state: {moves, time} });
                   stopTimer();
                   resetTimer();
                   }
@@ -123,16 +123,16 @@ const Gameboard_x3 = (props) => {
               }
               else{
                 items[current].stat = "wrong";
-                items[prevprev].stat = "wrong";
+                // items[prevprev].stat = "wrong";
                 items[prev].stat = "wrong";
                 setItems([...items])
     
                 setTimeout(()=>{
                     items[current].stat = ""
-                    items[prevprev].stat = ""
+                    // items[prevprev].stat = ""
                     items[prev].stat = ""
                     setPrev(-2),
-                    setPrevprev(-1)
+                    // setPrevprev(-1)
                     setDisabled(false); 
                 },3000)
               }
@@ -144,27 +144,28 @@ const Gameboard_x3 = (props) => {
                   {    
                     items[id].stat = 'active'
                     setItems([...items])
-                    setPrev(-1);
-                    setPrevprev(id);
+                    setPrev(id);
+                    // setPrevprev(id);
                     startTimer();
                     
                   }
-                  else if(prev == -1)
-                  {
-                    if(id === prevprev){return}
+                //   else if(prev == -1)
+                //   {
+                //     // if(id === prevprev){return}
     
-                    items[id].stat = 'active'
-                    setItems([...items])
-                    setPrev(id);
+                //     items[id].stat = 'active'
+                //     setItems([...items])
+                //     setPrev(id);
                     
-                  }
+                //   }
                   else{
     
-                    if(id === prev || id === prevprev){return}
+                    // if(id === prev || id === prevprev){return}
+                    if(id === prev){return}
     
                     setMoves(moves+1);
                     //items[id].stat = 'card3'
-                    checkThree(id);
+                    checkTwo(id);
                     
                   }
                 }
@@ -196,4 +197,4 @@ const Gameboard_x3 = (props) => {
   )
 }
 
-export default Gameboard_x3
+export default Gameboard_x2

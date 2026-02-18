@@ -34,6 +34,14 @@ import Finish from './gameboards/Finish';
 
 {/* <Link to="/about">Go to About</Link> */}
 
+import Gameboard_x2 from './gameboards/Gameboard_x2';
+import Nextboard_x2 from './gameboards/Nextboard_x2';
+import Gameboard_x3 from './gameboards/Gameboard_x3';
+import Nextboard_x3 from './gameboards/Nextboard_x3';
+import Gameboard_x4 from './gameboards/Gameboard_x4';
+import Nextboard_x4 from './gameboards/Nextboard_x4';
+
+import Selection from './gameboards/Selection';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -66,6 +74,13 @@ function App() {
         <Route path="/gameboard" element={<Gameboard levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>} />
         <Route path="/nextboard" element={<Nextboard levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
 
+        <Route path="/gameboard_x2" element={<Gameboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
+        <Route path="/nextboard_x2" element={<Nextboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/gameboard_x3" element={<Gameboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
+        <Route path="/nextboard_x3" element={<Nextboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/gameboard_x4" element={<Gameboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
+        <Route path="/nextboard_x4" element={<Nextboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+
         {/* <Route path="/next1" element={<Next1 />} />
         <Route path="/next2" element={<Next2 />} />
         <Route path="/next3" element={<Next3 />} />
@@ -74,6 +89,8 @@ function App() {
         <Route path="/next6" element={<Next6 />} /> */}
 
         <Route path="/finish" element={<Finish levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+
+        <Route path="/selection" element={<Selection levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
       </Routes>
     </div>
     <Footer />

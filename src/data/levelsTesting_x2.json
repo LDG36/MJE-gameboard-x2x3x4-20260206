@@ -3,33 +3,30 @@
 
     {"id":1, "text":"jabłko", "icon":"🍎", "stat": "vanish", "sound":"jablko.mp3", "lang":"PL" },
     {"id":1, "text":"an apple", "icon":"🍎", "stat": "vanish", "sound":"apple.mp3", "lang":"EN" },
-    {"id":1, "text":"una manzana", "icon":"🍎", "stat": "vanish", "sound":"manzana.mp3", "lang":"ES"  },
-    {"id":2, "text":"pomarańcze", "icon":"🍊", "stat": "vanish", "sound":"pomarancze.mp3", "lang":"PL"   },
 
+    {"id":2, "text":"pomarańcze", "icon":"🍊", "stat": "vanish", "sound":"pomarancze.mp3", "lang":"PL"   },
     {"id":2, "text":"an orange", "icon":"🍊", "stat": "vanish", "sound":"orange.mp3", "lang":"EN"   },
-    {"id":2, "text":"una naranja", "icon":"🍊", "stat": "vanish", "sound":"naranjas.mp3", "lang":"ES"  },
+
     {"id":3, "text":"cytryna", "icon":"🍋", "stat": "vanish", "sound":"cytryna.mp3", "lang":"PL"   },
     {"id":3, "text":"a lemon", "icon":"🍋", "stat": "vanish", "sound":"lemon.mp3", "lang":"EN"   },
 
-    {"id":3, "text":"un limón", "icon":"🍋", "stat": "vanish", "sound":"limon.mp3", "lang":"ES"  },
+
     {"id":4, "text":"truskawka", "icon":"🍓", "stat": "vanish", "sound":"truskawka.mp3", "lang":"PL"   },
     {"id":4, "text":"a strawberry", "icon":"🍓", "stat": "vanish", "sound":"strawberry.mp3", "lang":"EN"   },
-    {"id":4, "text":"una fresa", "icon":"🍓", "stat": "vanish", "sound":"fresa.mp3", "lang":"ES"  },
 
-    {"id":5, "text":"winogrona", "icon":"🍇", "stat": "vanish", "sound":"winogrona.mp3", "lang":"PL"   },
-    {"id":5, "text":"a grape", "icon":"🍇", "stat": "vanish", "sound":"grapes.mp3", "lang":"EN"   },
-    {"id":5, "text":"una uva", "icon":"🍇", "stat": "vanish", "sound":"uvas.mp3", "lang":"ES"  },
-    {"id":6, "text":"arbuz", "icon":"🍉", "stat": "vanish", "sound":"arbuz.mp3", "lang":"PL"   },
 
-    {"id":6, "text":"a watermelon", "icon":"🍉", "stat": "vanish", "sound":"watermelon.mp3", "lang":"EN"   },
-    {"id":6, "text":"una sandía", "icon":"🍉", "stat": "vanish", "sound":"sandia.mp3", "lang":"ES"  },
+    {"id":5, "text":"winogrona", "icon":"🍇", "stat": "", "sound":"winogrona.mp3", "lang":"PL"   },
+    {"id":5, "text":"a grape", "icon":"🍇", "stat": "", "sound":"grapes.mp3", "lang":"EN"   },
+
+    {"id":6, "text":"arbuz", "icon":"🍉", "stat": "", "sound":"arbuz.mp3", "lang":"PL"   },
+    {"id":6, "text":"a watermelon", "icon":"🍉", "stat": "", "sound":"watermelon.mp3", "lang":"EN"   },
+
     {"id":7, "text":"gruszka", "icon":"🍐", "stat": "", "sound":"gruszka.mp3", "lang":"PL"   },
     {"id":7, "text":"a pear", "icon":"🍐", "stat": "", "sound":"pear.mp3", "lang":"EN"   },
 
-    {"id":7, "text":"una pera", "icon":"🍐", "stat": "", "sound":"pera.mp3", "lang":"ES"  },
+ 
     {"id":8, "text":"wiśnia", "icon":"🍒", "stat": "", "sound":"wisnia.mp3", "lang":"PL"   },
-    {"id":8, "text":"a cherry", "icon":"🍒", "stat": "", "sound":"cherry.mp3", "lang":"EN"   },
-    {"id":8, "text":"una cereza", "icon":"🍒", "stat": "", "sound":"cereza.mp3", "lang":"ES"  }
+    {"id":8, "text":"a cherry", "icon":"🍒", "stat": "", "sound":"cherry.mp3", "lang":"EN"   }
 
   ],
 
