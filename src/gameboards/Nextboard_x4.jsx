@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
+const Nextboard_x4 = ({ levelcounter3, setLevelcounter3 }) => {
 
     const navigate = useNavigate();
     const {state} = useLocation();
@@ -76,4 +76,4 @@ const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
 }
 
 
-export default Nextboard
+export default Nextboard_x4

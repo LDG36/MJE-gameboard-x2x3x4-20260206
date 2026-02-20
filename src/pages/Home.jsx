@@ -17,16 +17,20 @@ const Home = ({ levelcounter3, setLevelcounter3 }) => {
 
 
             <div className="funContainer">
-                <p className="redFont"> 
-                This is another example of MJE web app by Lukasz Galik. 
+                {/* <p className="redFont">  */}
+                <p>
+                {/* This is another example of MJE web app by Lukasz Galik. 
                 This instance proves that it is possible to fix some 
                 logical errors related to the game mechanics. This 
-                solution is being addapted as part of a Portfolio.
+                solution is being addapted as part of a Portfolio. */}
                 {/*                 
                 It also 
                 adjust this piece of software to mobile view.
                 On top of that Timer and a Score count are added. */}
                 
+                This is a web app (MJE) by Lukasz Galik as part of Honours Project at Edinburgh Napier University.
+                To work correctly it needs an internet connection and a Google Chrome browser.
+                It is an easy way to learn languages subconsciously. 
                    
                 </p>
             </div> 
@@ -41,7 +45,7 @@ const Home = ({ levelcounter3, setLevelcounter3 }) => {
         </div>
         {/* <Link to='/gameboard'> */}
             {/* <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard') }}> */}
-            <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/gameboard_x4') }}>
+            <button className="startBtn" onClick={() => {setLevelcounter3(0); navigate('/selection') }}>
                 Start
             </button>
         {/* </Link> */}

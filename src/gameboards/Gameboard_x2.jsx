@@ -3,7 +3,8 @@ import { useState } from 'react'
 import Card from '../components/Card'
 import { useRef, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import levelsData from "../data/levelsTesting_x2.json";
+// import levelsData from "../data/levelsTesting_x2.json";
+import levelsData from "../data/levels_x18.json";
 
 
 //need to send props from App.jsx
@@ -18,21 +19,59 @@ const Gameboard_x2 = (props) => {
     }, []);
 
     const levelcounter = props.levelcounter3;
+    const selectedLangs = props.selectedLangs;
+    const modeOfTheBoard = props.modeOfTheBoard;
 
-    const totalLevels = levelsData.length;    
-
+    //4xSOLUTIONS:
+    //const totalLevels = levelsData.length;
+    const firstLang = Object.keys(levelsData)[0];
+    const totalLevels = Object.keys(levelsData[firstLang]).length;
+    // const getTotalLevels = () => {
+    //   const firstLang = Object.keys(levelsData)[0];
+    //   return Object.keys(levelsData[firstLang]).length;
+    // };
+    const getTotalLevels = () => {
+      const firstLang = Object.keys(levelsData || {})[0];
+      return firstLang
+        ? Object.keys(levelsData[firstLang] || {}).length
+        : 0;
+    };
+    
     const [items, setItems] = useState([]);
+
+
+    //generating mixed limited lang but according to id's
+    const generateMultilingualLevel = (languages, levelcounter, limitPerLanguage) => {
+      const ids = levelsData[languages[0]][levelcounter].map(item => item.id);
+      const shuffledIds = [...ids].sort(() => Math.random() - 0.5);
+      const selectedIds = shuffledIds.slice(0, limitPerLanguage);
+      const combined = languages.flatMap(lang => {
+        const items = levelsData[lang][levelcounter];
+        const limited = items.filter(item => selectedIds.includes(item.id));
+        return limited.map(item => ({
+          ...item, lang
+        }));
+      });
+      return combined.sort(() => Math.random() - 0.5);
+    };
+
+
     useEffect(() => {
 
-      if (levelcounter >= totalLevels) {
+      if (levelcounter >= getTotalLevels()) {
       navigate("/finish", {state: {moves, time}});
       return;
       }
 
-      const freshItems = levelsData[levelcounter]
-        .map(item => ({ ...item })) // clone objects - recomended by Copilot
-        .sort(() => Math.random() - 0.5); // shuffle
+      //const freshItems = generateMultilingualLevel(state?.selected ,levelcounter, (state?.mode/2));
+      const freshItems = generateMultilingualLevel(selectedLangs ,levelcounter, (modeOfTheBoard/2));
       setItems(freshItems);
+      
+
+      // const freshItems = levelsData[levelcounter]
+      //   .map(item => ({ ...item })) // clone objects - recomended by Copilot
+      //   .sort(() => Math.random() - 0.5); // shuffle
+      // setItems(freshItems);
     }, [levelcounter, totalLevels, navigate]);
 
 
@@ -152,12 +191,35 @@ const Gameboard_x2 = (props) => {
                 }
           }
     
+//TESTING ONLY (dynamic classes)
+// console.log(typeof modeOfTheBoard, modeOfTheBoard);
+// console.log(gameContainer_12);
+// console.log(styles);
+
+// console.log("mode:", modeOfTheBoard);
+// console.log("class:", {
+//   12: "gameContainer_12",
+//   24: "gameContainer",
+//   36: "gameContainer_36",
+// }[modeOfTheBoard]);
+
 
 
 
   return (
           <>
-        <div className="gameContainer" ref={bottomRef}>
+        {/* <div className={`gameContainer ${modeOfTheBoard===24 ? "gameContainer" : ""}
+        ${modeOfTheBoard===12 ? "gameContainer_12" : ""}
+        ${modeOfTheBoard===36 ? "gameContainer_36" : ""}`} ref={bottomRef}> */}
+
+        <div className={{
+              12: "gameContainer_12",
+              24: "gameContainer",
+              36: "gameContainer_36",
+            }[modeOfTheBoard] || ""}
+            ref={bottomRef}>
+
+        {/* <div className="gameContainer_12" ref={bottomRef}> */}
           {items.map((item, index) => (
 
             <Card 

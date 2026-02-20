@@ -18,6 +18,8 @@ const Gameboard_x4 = (props) => {
     }, []);
 
     const levelcounter = props.levelcounter3;
+    const selectedLangs = props.selectedLangs;
+    const  modeOfTheBoard = props.modeOfTheBoard;
 
     //4xSOLUTIONS:
     //const totalLevels = levelsData.length;
@@ -60,7 +62,9 @@ const Gameboard_x4 = (props) => {
       return;
       }
 
-      const freshItems = generateMultilingualLevel(["english", "spanish", "polish", "french"],levelcounter,6);
+      //const freshItems = generateMultilingualLevel(["english", "spanish", "polish", "french"],levelcounter,6);
+      //const freshItems = generateMultilingualLevel(state?.selected ,levelcounter, (state?.mode/4));
+      const freshItems = generateMultilingualLevel(selectedLangs ,levelcounter, (modeOfTheBoard/4));
       setItems(freshItems);
       // const freshItems = levelsData[levelcounter]
       //   .map(item => ({ ...item })) // clone objects - recomended by Copilot
@@ -228,7 +232,16 @@ const Gameboard_x4 = (props) => {
 
   return (
           <>
-        <div className="gameContainer" ref={bottomRef}>
+
+
+        <div className={{
+              12: "gameContainer_12",
+              24: "gameContainer",
+              36: "gameContainer_36",
+            }[modeOfTheBoard] || ""}
+            ref={bottomRef}>
+
+        {/* <div className="gameContainer" ref={bottomRef}> */}
           {items.map((item, index) => (
 
             <Card 

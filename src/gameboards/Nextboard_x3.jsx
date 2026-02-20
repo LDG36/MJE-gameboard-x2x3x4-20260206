@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
+const Nextboard_x3 = ({ levelcounter3, setLevelcounter3 }) => {
 
     const navigate = useNavigate();
     const {state} = useLocation();
@@ -44,7 +44,7 @@ const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
     <div className="settingsContainer">
 
       {/* <Link to="/gameboard"> */}
-      <button className="backToStartBtn" onClick={() => {setLevelcounter3(levelcounter3); navigate('/gameboard_x2') }}>
+      <button className="backToStartBtn" onClick={() => {setLevelcounter3(levelcounter3); navigate('/gameboard_x3') }}>
       {/* <button className="backToStartBtn"> */}
         Repeat
       </button>
@@ -53,7 +53,7 @@ const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
       {/* <Link to="/playmoods"> */}
       {/* <button className="startBtn2" OnClick={() => {navigate('/gameboard', {state: {level: level + 1}})}}> */}
       
-      <button className="startBtn2" onClick={() => {setLevelcounter3(prev => prev + 1); navigate('/gameboard_x2') }}>
+      <button className="startBtn2" onClick={() => {setLevelcounter3(prev => prev + 1); navigate('/gameboard_x3') }}>
       {/* <button className="startBtn2"> */}
         Play Next
       </button>
@@ -76,4 +76,4 @@ const Nextboard = ({ levelcounter3, setLevelcounter3 }) => {
 }
 
 
-export default Nextboard
+export default Nextboard_x3

@@ -17,9 +17,10 @@ import {useLocation} from "react-router-dom"
 
 
 
-const Selection = () => {
+const Selection = ({selectedLangs, setSelectedLangs, modeOfTheBoard,  setModeOfTheBoard }) => {
 
 const [selected, setSelected] = useState([]);
+const [mode, setMode] = useState(24); 
 const navigate = useNavigate();
 const {state} = useLocation();
 const flagMap = {
@@ -30,10 +31,11 @@ const flagMap = {
   spanish
 };
 
-//displayin validation message with fade out effect //second click does not work -> needs fix
+//displayin validation message with fade out effect
 const [validationMsg, setValidationMsg] = useState("");
 const [showMsg, setShowMsg] = useState(false);
 const [fade, setFade] = useState(false);
+const [msgKey, setMsgKey] = useState(0);
 useEffect(() => {
   if (!validationMsg) return;
   setShowMsg(true);
@@ -48,14 +50,11 @@ useEffect(() => {
     clearTimeout(fadeTimer);
     clearTimeout(hideTimer);
   };
-}, [validationMsg]);
-
-
+}, [msgKey]); //[validationMsg][msgKey]
 
 
 function handleCheckboxChange(e) {
   const value = e.target.value;
-
   setSelected(prev =>
     prev.includes(value)
       ? prev.filter(v => v !== value)
@@ -66,47 +65,68 @@ function handleCheckboxChange(e) {
 function handleX2() {
   if (selected.length !== 2) {
     setValidationMsg("For option 2x please select 2 custom languages");
+    setMsgKey(prev => prev + 1); 
     return;
   }
 
+  setSelectedLangs(selected);
+  setModeOfTheBoard(Number(mode));
+  
   navigate('/gameboard_x2', {
-    state: { languages: selected }
+    // state: { 
+    //   // languages: selected,
+    //   // gameboardSize: mode
+    //   selected, mode
+    //  }
   });
 }
 
 function handleX3() {
   if (selected.length !== 3) {
     setValidationMsg("For option 3x please select 3 custom languages");
+    setMsgKey(prev => prev + 1); 
     return;
   }
 
+  setSelectedLangs(selected);
+  setModeOfTheBoard(Number(mode));
+
   navigate('/gameboard_x3', {
-    state: { languages: selected }
+    // state: { 
+    //   selected, mode
+    //  }
   });
 }
 
 function handleX4() {
   if (selected.length !== 4) {
     setValidationMsg("For option 4x please select 4 custom languages");
+    setMsgKey(prev => prev + 1); 
     return;
   }
 
+  setSelectedLangs(selected);
+  setModeOfTheBoard(Number(mode));
+
   navigate('/gameboard_x4', {
-    state: { languages: selected }
+    // state: { 
+    //   selected, mode
+    //  }
   });
 }
 
 
 
   return (
-    <div className="FormContainer">
+    <div className="FormContainer settingsContainer">
 
 
+        <h1 className="settingsHeading">Settings</h1>
 
         <div className="buttons">
-          <button onClick={handleX2} className="startBtn"><h1>x2</h1></button>
-          <button onClick={handleX3} className="startBtn"><h1>x3</h1></button>
-          <button onClick={handleX4} className="startBtn"><h1>x4</h1></button>
+          <button onClick={handleX2} className="startBtn_x2x3x4"><h1>x2</h1></button>
+          <button onClick={handleX3} className="startBtn_x2x3x4"><h1>x3</h1></button>
+          <button onClick={handleX4} className="startBtn_x2x3x4"><h1>x4</h1></button>
         </div>
 
         {/* <form> */}
@@ -155,6 +175,10 @@ function handleX4() {
             <img src={flagMap[lang]} alt="" />
           </label>
         ))}
+
+        
+        <br/>
+        <br/>
         {/* {
         setTimeout(()=>{
         <h1 className="validMsg">{validationMsg}</h1>
@@ -170,6 +194,17 @@ function handleX4() {
         )}
 
         {/* </form>      */}
+
+
+        <div className="mode-selector">
+          {["12", "24", "36"].map(option => (
+            <label key={option} className={`mode-btn ${mode === option ? "active" : ""}`}>
+              <input type="radio" name="mode" value={option} checked={mode === option} onChange={() => setMode(option)}/>
+              <h1>{option}</h1>
+            </label>
+          ))}
+        </div>
+
 
     </div>
   )

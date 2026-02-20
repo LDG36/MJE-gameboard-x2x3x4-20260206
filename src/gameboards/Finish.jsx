@@ -37,7 +37,7 @@ const Finish = ({ levelcounter3, setLevelcounter3 }) => {
     <div className="settingsContainer">
 
       {/* <Link to="/"> */}
-      <button className="backToStartBtn"  onClick={() => {setLevelcounter3(0); navigate('/') }}>
+      <button className="backToStartBtnFinish"  onClick={() => {setLevelcounter3(0); navigate('/') }}>
         Completed - Back to Start
       </button>
       {/* </Link> */}

@@ -49,6 +49,9 @@ function App() {
 
   //added on 20260205 for About.jsx Quick Access
   const [levelcounter3, setLevelcounter3] = useState(0);
+  //global states help to keep info regardless of component or pages you are on
+  const [selectedLangs, setSelectedLangs] = useState([]);
+  const [modeOfTheBoard, setModeOfTheBoard] = useState(24);
 
   
   return (
@@ -56,11 +59,20 @@ function App() {
     <Header />
     <div className="container">
       <Routes>
-        <Route path="/" element={<Home  levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/" element={<Home  levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} 
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
+
+        <Route path="/settings" element={<Settings levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} 
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
+
         <Route path="/funfacts" element={<FunFacts />} />
         {/* <Route path="/game" element={<Game />} /> */}
-        <Route path="/about" element={<About levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>} />
+
+        <Route path="/about" element={<About levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
 
         {/* <Route path="/playfruits" element={<PlayFruits />} /> */}
         {/* <Route path="/playfruits2" element={<PlayFruits2 />} /> */}
@@ -71,15 +83,28 @@ function App() {
         <Route path="/playhomeware" element={<PlayHomeware />} />
         <Route path="/playactions" element={<PlayActions />} /> */}
 
+{/*      //OLD
         <Route path="/gameboard" element={<Gameboard levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>} />
-        <Route path="/nextboard" element={<Nextboard levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/nextboard" element={<Nextboard levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} /> */}
 
-        <Route path="/gameboard_x2" element={<Gameboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
-        <Route path="/nextboard_x2" element={<Nextboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
-        <Route path="/gameboard_x3" element={<Gameboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
-        <Route path="/nextboard_x3" element={<Nextboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
-        <Route path="/gameboard_x4" element={<Gameboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}/>}/>
-        <Route path="/nextboard_x4" element={<Nextboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/gameboard_x2" element={<Gameboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>}/>
+        <Route path="/nextboard_x2" element={<Nextboard_x2 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs} 
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
+        <Route path="/gameboard_x3" element={<Gameboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>}/>
+        <Route path="/nextboard_x3" element={<Nextboard_x3 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs} 
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
+        <Route path="/gameboard_x4" element={<Gameboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>}/>
+        <Route path="/nextboard_x4" element={<Nextboard_x4 levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs} 
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
 
         {/* <Route path="/next1" element={<Next1 />} />
         <Route path="/next2" element={<Next2 />} />
@@ -88,9 +113,13 @@ function App() {
         <Route path="/next5" element={<Next5 />} />
         <Route path="/next6" element={<Next6 />} /> */}
 
-        <Route path="/finish" element={<Finish levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/finish" element={<Finish levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs} 
+         modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
 
-        <Route path="/selection" element={<Selection levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3} />} />
+        <Route path="/selection" element={<Selection levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+         selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
+          modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
       </Routes>
     </div>
     <Footer />

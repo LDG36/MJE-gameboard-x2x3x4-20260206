@@ -94,9 +94,15 @@ function Card({item, id, handleClick, disabled}){
 
     return (
         <div className={"card"+itemClass} onClick={()=>{
-            if(!disabled){
-            handleClick(id);
-            speak(item.text, item.lang)
+            if(!disabled)
+            {
+                handleClick(id);
+                
+                if(!item.stat.includes("vanish"))
+                {
+                // handleClick(id); //or here???
+                speak(item.text, item.lang)
+                };
             };
         }}>
         {/* <div className="card" onClick={()=>handleClick(id)}></div> */}
