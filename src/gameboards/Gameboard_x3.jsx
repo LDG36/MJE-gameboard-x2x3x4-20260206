@@ -6,6 +6,12 @@ import { useLocation, useNavigate } from 'react-router-dom';
 // import levelsData from "../data/levelsTesting.json";
 import levelsData from "../data/levels_x18.json";
 
+import english from '../assets/flags/BritishFlag.webp';
+import french from '../assets/flags/FrenchFlag.webp';
+import german from '../assets/flags/GermanFlag.webp';
+import polish from '../assets/flags/PolishFlag.webp';
+import spanish from '../assets/flags/SpanishFlag.webp';
+
 //at the moment the same as Gameboard_x2(no x2 changes yet) and same as Gameboard (without comments) 20260212
 
 //need to send props from App.jsx
@@ -22,6 +28,14 @@ const Gameboard_x3 = (props) => {
     const levelcounter = props.levelcounter3;
     const selectedLangs = props.selectedLangs;
     const  modeOfTheBoard = props.modeOfTheBoard;
+    // const levelcounter = props.levelcounter3 ?? state?.levelcounter3 ?? 0;
+    // const selectedLangs = props.selectedLangs ?? state?.selectedLangs ?? ["english", "polish", "spanish", "french"];
+    // const modeOfTheBoard = props.modeOfTheBoard ?? state?.modeOfTheBoard ?? 24;
+
+
+    //THis is important because solution may have bugs -> test it in a console!!!
+    // console.log("props:", props);
+    // console.log("state:", state);
 
     //4xSOLUTIONS:
     //const totalLevels = levelsData.length;

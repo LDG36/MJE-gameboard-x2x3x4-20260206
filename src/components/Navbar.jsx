@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link to='/'><li className="liHome">Home</li></Link>
                 <Link to='/funfacts'><li className="liGame">Fun Facts</li></Link>
                 <Link to='/selection'><li className="liSettings">Settings</li></Link>
-                <Link to='/about'><li className="liAbout">About</li></Link>
+                <Link to='/quickaccess'><li className="liAbout">Quick Access</li></Link>
             </ul>
         </div>
     </div>

@@ -22,6 +22,10 @@ const Gameboard_x2 = (props) => {
     const selectedLangs = props.selectedLangs;
     const modeOfTheBoard = props.modeOfTheBoard;
 
+    //THis is important because solution may have bugs -> test it in a console!!!
+    // console.log("props:", props);
+    // console.log("state:", state);
+
     //4xSOLUTIONS:
     //const totalLevels = levelsData.length;
     const firstLang = Object.keys(levelsData)[0];

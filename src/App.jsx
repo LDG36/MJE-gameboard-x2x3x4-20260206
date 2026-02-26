@@ -8,7 +8,7 @@ import Settings from './pages/Settings';
 import Header from './components/Header';
 import Footer from './components/Footer';
 // import Game from './gameboards/PlayFruits';
-import About from './pages/About';
+import QuickAccess from './pages/QuickAccess';
 import FunFacts from './pages/FunFacts';
 
 // import PlayFruits from './junk/PlayFruits';
@@ -50,8 +50,8 @@ function App() {
   //added on 20260205 for About.jsx Quick Access
   const [levelcounter3, setLevelcounter3] = useState(0);
   //global states help to keep info regardless of component or pages you are on
-  const [selectedLangs, setSelectedLangs] = useState([]);
-  const [modeOfTheBoard, setModeOfTheBoard] = useState(24);
+  const [selectedLangs, setSelectedLangs] = useState(["english","spanish"]);
+  const [modeOfTheBoard, setModeOfTheBoard] = useState(12);
 
   
   return (
@@ -70,7 +70,7 @@ function App() {
         <Route path="/funfacts" element={<FunFacts />} />
         {/* <Route path="/game" element={<Game />} /> */}
 
-        <Route path="/about" element={<About levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
+        <Route path="/quickaccess" element={<QuickAccess levelcounter3={levelcounter3} setLevelcounter3={setLevelcounter3}
         selectedLangs={selectedLangs} setSelectedLangs={setSelectedLangs}
          modeOfTheBoard={modeOfTheBoard} setModeOfTheBoard={setModeOfTheBoard}/>} />
 

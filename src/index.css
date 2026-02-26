@@ -723,6 +723,18 @@ ABOVE - styling game area - copied from separte project - LDG - 20251013
         cursor:pointer;
       }
 
+      .funContainer{
+
+        border: solid black 2px;
+        background-color: white;
+        max-width:100vw;
+        margin-top:50px;
+        margin-left:5px;
+        margin-right:5px;
+        padding:5%;
+
+      }
+
 
   }
 

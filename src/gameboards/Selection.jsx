@@ -64,7 +64,7 @@ function handleCheckboxChange(e) {
 
 function handleX2() {
   if (selected.length !== 2) {
-    setValidationMsg("For option 2x please select 2 custom languages");
+    setValidationMsg("For option 2x please select two flags");
     setMsgKey(prev => prev + 1); 
     return;
   }
@@ -83,7 +83,7 @@ function handleX2() {
 
 function handleX3() {
   if (selected.length !== 3) {
-    setValidationMsg("For option 3x please select 3 custom languages");
+    setValidationMsg("For option 3x please select three flags");
     setMsgKey(prev => prev + 1); 
     return;
   }
@@ -100,7 +100,7 @@ function handleX3() {
 
 function handleX4() {
   if (selected.length !== 4) {
-    setValidationMsg("For option 4x please select 4 custom languages");
+    setValidationMsg("For option 4x please select four flags");
     setMsgKey(prev => prev + 1); 
     return;
   }

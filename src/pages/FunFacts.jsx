@@ -68,6 +68,34 @@ const FunFacts = () => {
             </p>
         </div>
 
+        {/* <div className="stylingAbout"> */}
+        <h1 className="landingHeader">About the Project</h1>
+        <div  className="funContainer">
+            
+            {/* <p className="MJEdescription2"> */}
+            <p>
+                As presented at the homepage, the MahJong Europa (MJE) was developed by Lukasz Galik as part
+                of Honours Project at Edinburgh Napier University. MJE is a language learning app available as a website.
+            </p>
+        </div> 
+        <div className="funContainer">   
+            {/* <p className="MJEdescription2"> */}
+            <p>
+                MJE was developed in JavaScript together with React.js library/framework.
+                It is a front end only at the moment. It uses Vite to set up web app environment.
+                It uses JSX to incorporate an HTML code into the JavaScript - which is a common 
+                practice in React.js. 
+            </p>
+        </div>
+        <div className="funContainer">
+            {/* <p className="MJEdescription2"> */}
+            <p>
+            MJE is being stored and backed up using GitHub repository. GitHub is connected
+            with Netlify and MJE is hosted at the following URL address: https://mahjongeuropa.netlify.app/
+            Netlify is a fee hosting provider for front-end websites.
+            </p>
+        </div>
+        
     </article>
     </>
   )

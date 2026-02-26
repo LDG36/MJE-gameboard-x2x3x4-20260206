@@ -20,6 +20,14 @@ const Gameboard_x4 = (props) => {
     const levelcounter = props.levelcounter3;
     const selectedLangs = props.selectedLangs;
     const  modeOfTheBoard = props.modeOfTheBoard;
+    // const levelcounter = props.levelcounter3 ?? state?.levelcounter3 ?? 0;
+    // const selectedLangs = props.selectedLangs ?? state?.selectedLangs ?? ["english", "polish", "spanish", "german"];
+    // const modeOfTheBoard = props.modeOfTheBoard ?? state?.modeOfTheBoard ?? 36;
+
+    //THis is important because solution may have bugs -> test it in a console!!!
+    // console.log("props:", props);
+    // console.log("state:", state);
+
 
     //4xSOLUTIONS:
     //const totalLevels = levelsData.length;
